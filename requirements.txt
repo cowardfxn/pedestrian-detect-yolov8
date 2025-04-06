@@ -27,11 +27,6 @@ matplotlib
 imageio==2.34.0
 imageio-ffmpeg==0.4.9
 
-# 可选扩展功能
-# 测距测速扩展
-tensorflow==2.17.0  # 用于部分辅助模型
-onnxruntime==1.19.0  # 模型导出/部署
-
 # # GUI界面支持
 # pyqt5==5.15.9
 # streamlit==1.35.0  # 网页8的交互界面依赖
