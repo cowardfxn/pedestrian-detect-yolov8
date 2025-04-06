@@ -1,0 +1,21 @@
+
+Test-Path $Profile  # 返回True表示已存在
+
+若不存在:
+New-Item -Path $Profile -Type File -Force
+
+notepad $Profile
+
+function gpl($p) { 
+    Do {
+        git pull $p;
+    }
+    Until ($?);
+}
+
+function gph($p) { 
+    Do {
+        git push $p;
+    }
+    Until ($?);
+}
